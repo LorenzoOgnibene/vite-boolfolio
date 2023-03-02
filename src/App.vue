@@ -1,9 +1,13 @@
 <script setup>
-//import HelloWorld from './components/HelloWorld.vue'
+    import Projects from './components/Projects.vue';
+
+    components : [
+        Projects,
+    ];
 </script>
 
 <template>
- 
+    <Projects />
 </template>
 
 <style scoped>
