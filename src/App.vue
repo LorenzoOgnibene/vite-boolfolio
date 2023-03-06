@@ -1,14 +1,28 @@
-<script setup>
-    import Projects from './components/Projects.vue';
+<script>
+    import ProjectCard from './components/ProjectCard.vue';
+    import SingleCard from './components/SingleCard.vue';
+    export default {
+       name: 'App', 
 
-    components : [
-        Projects,
-    ];
+        components : {
+            ProjectCard,
+            SingleCard,
+        },
+
+        data() {
+            return {
+                
+            }
+        },
+    }
+
 </script>
 
 <template>
-    <Projects />
+    <!-- <ProjectCard /> -->
+    <SingleCard/>
 </template>
 
-<style scoped>
+<style lang="scss">
+ @use 'bootstrap/scss/bootstrap' as *;
 </style>
